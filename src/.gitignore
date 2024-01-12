@@ -1,6 +1,0 @@
-node_modules/
-.next/
-out/
-tsconfig.tsbuildinfo
-synch.sh
-.git/

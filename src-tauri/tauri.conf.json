@@ -1,9 +1,14 @@
 {
   "build": {
-    "beforeDevCommand": "yarn next dev",
-    "beforeBuildCommand": "yarn next build",
-    "devPath": "http://localhost:3000",
-    "distDir": "../out",
+    "beforeDevCommand": {
+      "script": "yarn rspack build"
+    },
+    "beforeBuildCommand": {
+      "script": "yarn rspack build"
+    },
+    
+    "devPath": "../src",
+    "distDir": "../src",
     "withGlobalTauri": true
   },
   "package": {
@@ -44,7 +49,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "Filedime",
+        "title": "V File Explorer",
         "width": 800,
         "height": 600
       }
